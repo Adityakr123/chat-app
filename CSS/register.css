@@ -1,0 +1,154 @@
+@media screen and (max-width: 764px) {
+.topheading{
+    text-align:center;
+    margin-top:30%;
+    font-size: 40px;
+}
+.secondheading{
+    text-align:center;
+    padding-top:15%;
+    font-size: 30px;
+}
+.box{
+    width:80%;
+    margin-left:10%;
+    background-color: aqua;
+    border-radius: 20px;
+    /* width: fit-content; */
+}
+
+.input{
+    display: block;
+    margin-top:10%;
+    /* margin-left:20%; */
+    height:50px;
+    border-radius:20px;
+    padding-left:20px;
+    padding-right: 20px;
+    width:80%;
+    border:2px solid  ;
+    resize: none;
+    outline: none;
+    font-size:larger;
+   
+
+}
+.input:hover { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    border-color: red;
+}
+
+.input:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+ 
+    
+  }
+
+
+.input:active{
+    border-color: red;
+}
+.submit{
+    display: block;
+    margin-top:5%;
+    width:40%;
+    margin-left:30%;
+    height:50px;
+    border-radius:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.topinput{
+    margin-top:-20px;
+}
+}
+.input1{
+    padding-top:10%; 
+    padding-bottom:10%;
+    padding-left: 10%;
+    padding-right:10%;
+    
+}
+@media screen and (min-width: 765px) {
+    .topheading{
+        text-align:center;
+        margin-top:5%;
+        font-size: 70px;
+    }
+    .secondheading{
+        text-align:center;
+        padding-top:5%;
+        font-size: 50px;
+    }
+    .box{
+        width:80%;
+        margin-left:10%;
+        background-color: aqua;
+        border-radius: 20px;
+    
+      
+    }
+    .input{
+        display: block;
+        margin-top:5%;
+        width:80%;
+        margin-left:10%;
+        height:50px;
+        border-radius:20px;
+        padding-left:20px;
+        border:2px solid  ;
+       
+        resize: none;
+        outline: none;
+        font-size:larger;
+    
+    
+       
+    }
+    .input:hover { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        border-color: red;
+    }
+    
+    .input:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+     
+        
+      }
+    
+    .submit{
+        display: block;
+        margin-top:5%;
+        width:fit-content;
+        margin-left:45%;
+        height:50px;
+        border-radius:30px;
+        padding-left:30px;
+        padding-right:30px;
+        background-color: white;
+        border:2px solid  ;
+        
+        resize: none;
+        outline: none;
+        font-size:larger;
+    
+       
+    }
+    .submit:active{
+        border-color: red;
+        
+    }
+    .submit:hover{
+        border-color: red;
+        color: red;
+        text-decoration: solid;
+        border-radius:40px;
+        font-weight: 700;
+     
+    }
+    .input:active{
+        border-color: red;
+       
+    }
+    .topinput{
+        margin-top:-70px;
+    }
+}
