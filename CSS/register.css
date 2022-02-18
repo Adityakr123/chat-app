@@ -21,11 +21,13 @@
     display: block;
     margin-top:10%;
     /* margin-left:20%; */
+    margin-left:-10px;
+    align-items: center;
     height:50px;
     border-radius:20px;
     padding-left:20px;
     padding-right: 20px;
-    width:80%;
+    width:110%;
     border:2px solid  ;
     resize: none;
     outline: none;
@@ -42,6 +44,17 @@
  
     
   }
+  .content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    z-index: -1;
+    width: 100%;
+    /* padding: 0 30px; */
+    /* color: #1b1b1b; */
+  }
 
 
 .input:active{
@@ -57,8 +70,20 @@
     padding-left:20px;
     padding-right:20px;
 }
+.submit:active{
+    border-color: red;
+    
+}
+.submit:hover{
+    border-color: red;
+    color: red;
+    text-decoration: solid;
+    border-radius:40px;
+    font-weight: 700;
+ 
+}
 .topinput{
-    margin-top:-20px;
+    margin-top:-10px;
 }
 }
 .input1{
@@ -80,8 +105,8 @@
         font-size: 50px;
     }
     .box{
-        width:80%;
-        margin-left:10%;
+        width:60%;
+        margin-left:20%;
         background-color: aqua;
         border-radius: 20px;
     
@@ -113,12 +138,23 @@
      
         
       }
+      .content{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+        z-index: -1;
+        width: 100%;
+        /* padding: 0 30px; */
+        /* color: #1b1b1b; */
+      }
     
     .submit{
         display: block;
         margin-top:5%;
         width:fit-content;
-        margin-left:45%;
+        margin-left:40%;
         height:50px;
         border-radius:30px;
         padding-left:30px;
