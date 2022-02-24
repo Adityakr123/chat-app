@@ -5,10 +5,10 @@ $dbHost     = "localhost";
 $dbUsername = "root";  
 $dbPassword = "";  
 $dbName     = "letschatt";  
-  
+
 // Create database connection  
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);  
-  
+
 // Check connection  
 if ($db->connect_error) {  
     die("Connection failed: " . $db->connect_error);  
@@ -21,10 +21,11 @@ $FIND=0;
 $checkcopy=0;
 $CPASSCOPY;
 $PASSCOPY;
-if(isset($_POST["submit"])){ 
-        
+
        
-         
+if(isset($_POST["name"])){ 
+        
+    echo"submit checked";
         // Allow certain file formats 
         
         
@@ -52,9 +53,13 @@ if(isset($_POST["submit"])){
             session_start();
             $_SESSION["id"] = $Username;
             // Insert image content into database 
+                try{
                 $db->query("CREATE TABLE REGISTRATIONS (name varchar(255),username varchar(255),email varchar(255),phone varchar(255))");
+                }
+                finally{
                 $insert = $db->query("INSERT into REGISTRATIONS(name,username,email,phone) VALUES ('$name','$Username','$Email','$Phone')"); 
                 $insert = $db->query("INSERT into login(Username,password) VALUES ('$Username','$safePassword')"); 
+                }
                 if($insert){ 
                     $FIND=1;
                 }
