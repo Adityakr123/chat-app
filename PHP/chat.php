@@ -14,17 +14,22 @@ if(isset($_POST["username"])){
         die("Connection failed: " . $conn->connect_error);
         
     }
+    session_start();
+    $fromname=$_SESSION["id"];
     $Username = $_POST['username'];
-    $sql = "SELECT Username,password FROM login where Username='$Username'";
-    $result = $conn->query($sql);
-    if (!empty($result) && $result->num_rows > 0) {
-        while($row = mysqli_fetch_assoc($result)) 
-        {
+    $table=$fromname.$Username;
+    echo"$table";
+    $conn->query("CREATE TABLE $table (sender varchar(255),reciever varchar(255),message varchar(255),DATE )");
+    // $sql = "SELECT Username,password FROM login where Username='$Username'";
+    // $result = $conn->query($sql);
+    // if (!empty($result) && $result->num_rows > 0) {
+    //     while($row = mysqli_fetch_assoc($result)) 
+    //     {
            
-              echo"hello$password";
+              
            
-        }
-    }
+    //     }
+    // }
 
 }
 ?>

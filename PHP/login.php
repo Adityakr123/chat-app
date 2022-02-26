@@ -16,6 +16,8 @@ if(isset($_POST["username"])){
     }
     $Username = $_POST['username'];
     $password = $_POST['password'];
+    session_start();
+    $_SESSION["id"] = $Username;
     $sql = "SELECT Username,password FROM login where Username='$Username'";
     $result = $conn->query($sql);
     if (!empty($result) && $result->num_rows > 0) {

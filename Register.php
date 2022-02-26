@@ -49,8 +49,7 @@ if(isset($_POST["name"])){
             }
             else
           {    
-            session_start();
-            $_SESSION["id"] = $Username;
+            
             // Insert image content into database 
                 try{
                 $db->query("CREATE TABLE REGISTRATIONS (name varchar(255),username varchar(255),email varchar(255),phone varchar(255))");
