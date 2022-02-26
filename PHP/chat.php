@@ -20,8 +20,8 @@ if(isset($_POST["username"])){
     $table=$fromname.$Username;
     echo"$table";
     $conn->query("CREATE TABLE $table (sender varchar(255),reciever varchar(255),message varchar(255),DATE )");
-    // $sql = "SELECT Username,password FROM login where Username='$Username'";
-    // $result = $conn->query($sql);
+    $sql = "SELECT Username,password FROM login where Username='$Username'";
+    $result = $conn->query($sql);
     // if (!empty($result) && $result->num_rows > 0) {
     //     while($row = mysqli_fetch_assoc($result)) 
     //     {
