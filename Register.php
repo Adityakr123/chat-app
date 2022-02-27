@@ -41,7 +41,7 @@ if(isset($_POST["name"])){
             $CPASSCOPY=$Password;
             $CPassword = $_POST['cpassword'];
             $PASSCOPY=$CPassword;
-            // $Tid = $_POST['Tid'];
+           
           
             if($CPASSCOPY!==$PASSCOPY){
             
