@@ -14,23 +14,20 @@
         margin-left:10%;
         background-color: aqua;
         border-radius: 20px;
-        /* width: fit-content; */
+    
     }
     .chat{
         margin-top:40px;
     }
     .input2{
-        
-        
-        
         /* margin-left:20%; */
-        margin-left:-10px;
+        margin-left:-20px;
         align-items: center;
         height:50px;
         border-radius:20px;
         padding-left:20px;
         padding-right: 20px;
-        width:110%;
+        width:100%;
         border:2px solid  ;
         resize: none;
         outline: none;
@@ -38,11 +35,11 @@
        
     
     }
-    .input2:hover { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    .input2:hover { 
         border-color: red;
     }
     
-    .input2:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    .input2:hover::placeholder { 
         color: red;
      
         
@@ -66,8 +63,8 @@
     .submit1{
         
         margin-top:5%;
-        width:40%;
-        margin-left:1%;
+        width:400%;
+        margin-left:-100%;
         height:50px;
         border-radius:20px;
         padding-left:20px;
@@ -75,7 +72,6 @@
     }
     .submit1:active{
         border-color: red;
-        
     }
     .submit1:hover{
         border-color: red;
@@ -97,6 +93,9 @@
         
     }
     @media screen and (min-width: 765px) {
+        .text{
+           height:390px;
+        }
         .topheading{
             text-align:center;
             margin-top:-12%;
@@ -108,8 +107,10 @@
             font-size: 50px;
         }
         .box{
-            width:60%;
-            margin-left:20%;
+            margin-top:-320px;
+            width:90%;
+            margin-left:5%;
+            height:600px;
             background-color: aqua;
             border-radius: 20px;
         
@@ -117,13 +118,15 @@
         }
         .input2{
            
-            margin-top:5%;
-            width:80%;
-            margin-left:10%;
+            /* margin-top:5%; */
+            width:110%;
+            margin-left:-5%;
             height:50px;
             border-radius:20px;
             padding-left:20px;
             border:2px solid  ;
+            position: static;
+           
            
             resize: none;
             outline: none;
@@ -155,19 +158,18 @@
         
         .submit1{
             
-            margin-top:5%;
+            /* margin-top:35%; */
             width:fit-content;
-            margin-left:1%;
+            margin-left:60%;
             height:50px;
             border-radius:30px;
-            padding-left:30px;
-            padding-right:30px;
+            padding-left:10px;
+            padding-right:10px;
             background-color: white;
             border:2px solid  ;
-            
             resize: none;
             outline: none;
-            font-size:larger;
+            font-size:x-small;
         
            
         }
