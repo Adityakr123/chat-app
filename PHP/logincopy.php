@@ -7,11 +7,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
-    <nav>
+<nav>
         <div class="logo">
            Letschatt
         </div>
@@ -23,7 +23,7 @@
            
            <li><a href="#">ABOUT US</a></li>
            <li><a href="Register.php">Register</a></li>
-           <li><a class="login.html"  href="#">Login</a></li>
+           <li><a class="active" href="#">Login</a></li>
            <!-- <li><a href="#">Gallery</a></li>
            <li><a href="#">Feedback</a></li> -->
         </ul>
@@ -32,14 +32,11 @@
         <h1 class="topheading">Let's chatt!!!</h1>
    
         <div class="box" >
-            <h2 class="secondheading">LOGIN</h2>
+            <h2 class="secondheading">ENTER USERNAME TO CHAT</h2>
                     
-            <form action="PHP/login.php" method="post" class="input1">
+            <form action="chat.php" method="post" class="input1">
                 <div style="align-items: center;">
                     <input type="text" name="username" placeholder="Enter your Username" class="input topinput">
-                  
-                    <input type="Password" name="password" placeholder="Enter your Pasword" class="input">
-                    
                     <input type="submit" class="submit" >
     
                 </div>
@@ -55,7 +52,7 @@
              </div>
             </span>
             </footer>
-      </div>
+    </div>
     
 </body>
-</html>  
+</html>
