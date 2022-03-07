@@ -151,7 +151,7 @@ $servername = "localhost";
         
    
         <div class="box " >
-            <form action="chat1.php" method="post" class="input1">
+            <form action="chat.php" method="post" class="input1">
                 <div style="align-items: center;">
                    
                     <div class="text scroll">
