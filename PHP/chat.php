@@ -85,8 +85,10 @@ $servername = "localhost";
     $message = $_POST['message'];
    
     $table2=$_SESSION["table"];
-    $conn->query("INSERT INTO $table2(sender,reciever,message,DATE) VALUES ('$fromname','$toname','$message', current_timestamp());");
+   
 
+        $conn->query("INSERT INTO $table2(sender,reciever,message,DATE) VALUES ('$fromname','$toname','$message', current_timestamp());");
+        
 }
 
 
@@ -151,18 +153,19 @@ $servername = "localhost";
         
    
         <div class="box " >
-            <form action="chat1.php" method="post" class="input1">
+            <form action="chat.php" method="post" class="input1">
                 <div style="align-items: center;">
                    
                     <div class="text scroll">
                     <?php
                     include 'message.php';
+                   
                     ?>
                     </div>
                     <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-10 col-sm-11 col-md-11 col-lg-11" > <input type="text" name="message" placeholder="Message" class="input2"></div>
-                          <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1" ><input type="submit" name="submit" class="submit1" placeholder="send" ></div>
+                          <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1" ><button class="submit1" type="submit" name="submit" onclick="myFunction()">submit </button></div>
                           <?php
                             $test=1;
                           
@@ -190,4 +193,9 @@ $servername = "localhost";
       </div>
     
 </body>
+<script>
+function myFunction() {
+
+}
+</script>
 </html>  

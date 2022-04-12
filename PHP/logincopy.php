@@ -31,7 +31,7 @@
       <div class="content">
         <h1 class="topheading">Let's chatt!!!</h1>
    
-        <div class="box" >
+        <div class="box">
             <h2 class="secondheading">ENTER USERNAME TO CHAT</h2>
                     
             <form action="chat.php" method="post" class="input1">
@@ -46,13 +46,12 @@
         
         <br>
         <br>
-        <footer style="background-color: black; color:white;text-align:center;height:80px;">
+        <!-- <footer style="background-color: black; color:white;text-align:center;height:80px;">
             <span ><br><div class="logo"><h4>
                COPYRIGHT @ADITYA KUMAR</h4>
              </div>
             </span>
-            </footer>
+            </footer> -->
     </div>
     
 </body>
-</html>
